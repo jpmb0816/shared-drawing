@@ -1,0 +1,28 @@
+{
+  "name": "shared-drawing",
+  "version": "1.0.0",
+  "description": "Shared Drawing using Socket NodeJS and p5.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpmb0816/shared-drawing.git"
+  },
+  "keywords": [
+    "sockets",
+    "nodejs",
+    "p5.js"
+  ],
+  "author": "John Paulo Beyong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpmb0816/shared-drawing/issues"
+  },
+  "homepage": "https://github.com/jpmb0816/shared-drawing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
