@@ -3,16 +3,16 @@ var socket;
 function setup() {
 	createCanvas(600, 400);
 	background(51);
-	//socket = io.connect('http://192.168.0.107:8099');
+	socket = io.connect('http://192.168.0.107:3000');
 }
 
 function mouseDragged() {
-	console.log("Sending: " + mouseX + ', ' + mouseY);
+	/*console.log("Sending: " + mouseX + ', ' + mouseY);
 	
 	var data = {
 		x: mouseX,
 		y: mouseY
-	};
+	};*/
 	
 	noStroke();
 	fill(255);
