@@ -2,14 +2,14 @@ var socket;
 
 function setup() {
 	createCanvas(600, 400);
-	background(51);
-	socket = io.connect('http://192.168.0.107:3000');
+	background(112, 146, 190);
+	socket = io.connect('http://192.168.22.23:3000');
 }
 
 function newDrawing(data) {
 	noStroke();
 	fill(255, 0, 100);
-	ellipse(data.x, data.y, 36, 36);
+	ellipse(data.x, data.y, 5, 5);
 }
 
 function mouseDragged() {
@@ -22,8 +22,8 @@ function mouseDragged() {
 	socket.on('mouse', newDrawing);
 	
 	noStroke();
-	fill(255);
-	ellipse(mouseX, mouseY, 36, 36);
+	fill(0);
+	ellipse(mouseX, mouseY, 5, 5);
 }
 
 function draw() {
